@@ -24,6 +24,7 @@
   h1, h2, h3 {
     margin-bottom: 20px;
     color: #f5882f;
+    text-align: center;
   }
   
   h1 {
@@ -42,6 +43,13 @@
     margin-bottom: 20px;
     font-size: 1.1em;
     line-height: 1.8;
+  }
+
+  .p1 {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-align: center;
   }
 
   a {
@@ -133,5 +141,5 @@
   
   .info-table td:first-child {
     font-weight: bold;
-    width: 150px; /* Adjust as needed */
+    width: 150px;
   }
