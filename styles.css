@@ -143,3 +143,27 @@
     font-weight: bold;
     width: 150px;
   }
+
+  .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
+  .calculator {
+    max-width: 300px;
+    width: 100%;
+  }
+  .calc-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .calc-section p {
+    font-size: 30px;
+  }
+  .calc-section input {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }

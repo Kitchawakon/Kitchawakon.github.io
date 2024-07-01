@@ -36,6 +36,45 @@
         <li>Project</li>
       </ul>
     </section>
+    <script>
+      function plus() {
+        const eInput1 = parseFloat(document.getElementById("input1").value);
+        const eInput2 = parseFloat(document.getElementById("input2").value);
+        const eOutput = document.getElementById('output');
+        if (!isNaN(eInput1) && !isNaN(eInput2)) {
+          eOutput.value = eInput1 + eInput2;
+        } else {
+          eOutput.value = 'Invalid input';
+        }
+      }
+      const multip = (a, b) => a * b;
+      console.log("test", 2, 3, multip(2, 2)); // แก้ไข console.log ให้แสดงผลที่ถูกต้อง
+    </script>
+    <div class="container center-container">
+      <div class="calculator text-center">
+        <h1>My Calculator</h1>
+        <br>
+        <div class="calc-section">
+          <input type="number" id="input1" class="form-control">
+          <p>+</p>
+          <input type="number" id="input2" class="form-control">
+          <p>=</p>
+          <input type="number" id="output" class="form-control" readonly>
+        </div>
+        <button 
+          type="button" 
+          class="btn btn-primary mt-3"
+          onclick="plus()">
+          Click me
+        </button>
+        <hr class="my-4">
+        <a 
+          href="todoapp.html" 
+          class="btn btn-outline-primary btn-lg" 
+          role="button" 
+          aria-disabled="true">Go to Todo App</a>
+      </div>
+    </div>
     <footer>
       <p>&copy; 2024 My Page 653450279-6</p>
     </footer>
