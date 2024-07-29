@@ -20,8 +20,12 @@ function displayWeather(data) {
     const temperature = data.main.temp;
     const humidity = data.main.humidity;
     const windSpeed = data.wind.speed;
+    const weatherIcon = data.weather[0].icon;
+    const weatherDescription = data.weather[0].description;
 
     weatherInfo.innerHTML = `
+        <img src="https://openweathermap.org/img/wn/${weatherIcon}@2x.png" alt="${weatherDescription}">
+        <p>${weatherDescription}</p>
         <p>Temperature: ${temperature}°C</p>
         <p>Humidity: ${humidity}%</p>
         <p>Wind Speed: ${windSpeed} m/s</p>
