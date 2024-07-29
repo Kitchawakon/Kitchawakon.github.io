@@ -167,3 +167,19 @@
     display: flex;
     align-items: center;
   }
+
+  .link-container {
+    margin-top: 20px;
+}
+a {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    background-color: #ff944d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+a:hover {
+    background-color: #e65c00;
+}
